@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+me.gaigeshen.wechat.pay.spring.boot.autoconfigure.WechatPayAutoConfiguration
