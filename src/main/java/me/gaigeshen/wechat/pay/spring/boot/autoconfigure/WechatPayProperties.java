@@ -14,7 +14,7 @@ public class WechatPayProperties {
   private String key;
   private String secret;
   private String certLocation;
-  private Http http;
+  private Http http = new Http();
 
   public static class Http {
     private int connectionRequestTimeout = 2000;
