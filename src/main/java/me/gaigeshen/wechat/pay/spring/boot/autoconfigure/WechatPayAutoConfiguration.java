@@ -43,7 +43,7 @@ public class WechatPayAutoConfiguration {
     return Config.builder().appid(appid).mchId(mchId).key(key).secret(properties.getSecret()).build();
   }
 
-  @Bean
+  @Bean(destroyMethod = "close")
   public RequestExecutor wechatRequestExecutor(Config config) throws Exception {
     SSLContext sslContext = null;
     String certLocation = properties.getCertLocation();
