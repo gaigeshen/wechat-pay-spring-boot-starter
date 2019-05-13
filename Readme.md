@@ -1,3 +1,5 @@
+## 微信支付自动配置
+[![Maven Central](https://img.shields.io/maven-central/v/me.gaigeshen.wechat/wechat-pay-spring-boot-starter.svg)](http://mvnrepository.com/artifact/me.gaigeshen.wechat/wechat-pay-spring-boot-starter)
 - 直接添加依赖即可，替换具体的版本号
 ```
 <dependency>
