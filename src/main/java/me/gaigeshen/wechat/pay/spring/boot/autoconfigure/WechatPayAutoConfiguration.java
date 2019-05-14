@@ -33,7 +33,7 @@ public class WechatPayAutoConfiguration {
   }
 
   @Bean
-  public Config wechatConfig() {
+  public Config wechatPayConfig() {
     String appid = properties.getAppid();
     String mchId = properties.getMchId();
     String key = properties.getKey();
@@ -44,7 +44,7 @@ public class WechatPayAutoConfiguration {
   }
 
   @Bean(destroyMethod = "close")
-  public RequestExecutor wechatRequestExecutor(Config config) throws Exception {
+  public RequestExecutor wechatPayRequestExecutor(Config config) throws Exception {
     SSLContext sslContext = null;
     String certLocation = properties.getCertLocation();
 
